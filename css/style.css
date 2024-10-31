@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    counter-reset: bein-counter 0;
+
+}
+
+/* 
+Container For sections
+*/
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+
+}
+
+.clear {
+    clear: both;
+}
+
+/* Pre Header Section */
+
+
+
+
+/* Header Section */
+.header-section {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+
+}
+
+.header-section ul li a {
+    text-decoration: none;
+    color: #6b6b6b;
+}
+
+.header-section .left-header {
+    float: left;
+    overflow: hidden;
+    width: 62%;
+    position: relative;
+    padding-left: 10%;
+}
+
+.header-section img {
+    width: 120px;
+    height: 50px;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+}
+
+.left-header ul {
+    list-style: none;
+
+}
+
+.left-header li {
+    float: left;
+    margin-left: 3%;
+    padding: 10px;
+    color: #6b6b6b;
+}
+
+/* ------------------- */
+.header-section .right-header span {
+
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.header-section .right-header a {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Subscribe {
+    background: #a42069;
+    color: white;
+    border: 1px solid #a42069;
+    border-radius: 7px;
+
+}
+
+.Subscribe a {
+    color: white;
+
+}
+
+.account a {
+    color: #6b6b6b;
+}
+
+.TV {
+    border: 1px solid #716C83;
+    position: relative;
+
+}
+
+.TV a {
+    color: #6b6b6b;
+}
+
+li.TV::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 60px;
+    background-color: #6b6b6b;
+    top: 0;
+    right: -10px;
+}
+
+
+
+/* The End of header section */
+/* The Start Of landing section */
+
+.landing-section {
+    background-image: url(/imgs/landing.jpg);
+    background-size: cover;
+    height: calc(100vh - 80px);
+    position: relative;
+
+}
+
+.landing-section ul {
+    position: absolute;
+    bottom: 12%;
+    left: 3%;
+}
+
+.landing-section ul li {
+
+    color: #716C83;
+    list-style-type: disc;
+    padding-left: 40px;
+    padding-top: 5px;
+    font-size: 60px;
+    float: left;
+
+}
+
+
+.landing-text {
+    text-align: center;
+    padding-top: 30%;
+    padding-left: 30%;
+    font-weight: 900;
+    color: #efefef;
+    font-size: 30px;
+}
+
+span.landing-button {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    width: fit-content;
+    margin-left: 60%;
+    background-color: #a42069;
+    color: white;
+    font-size: 20px;
+}
+
+span.landing-button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* F Section */
+.feature-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F0F0F0;
+}
+
+.feature-section .container {
+    background-color: white;
+}
+
+.feature-section .container .boxs .box {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 32.3%;
+    height: 500px;
+    padding-left: 1%;
+    background-color: white;
+}
+
+
+
+.feature-section .container .boxs .box span {
+    position: absolute;
+    bottom: 34%;
+    color: white;
+    background: #6F2FAE;
+    border-radius: 5%;
+    display: block;
+    padding: 10px 10px;
+
+}
+
+.feature-section .container .boxs .box img {
+    background-size: cover;
+    width: 95%;
+    height: 60%;
+    position: relative;
+    padding-top: 25px;
+}
+
+.feature-section .container .boxs .box p {
+    color: #6b6b6b;
+    padding: 60px 5px;
+    font-size: 17px;
+}
+
+
+
+/* Resssssssson */
+
+.reasons-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.reasons-section h2 {
+    padding-left: 15%;
+    padding-bottom: 5%;
+    color: #6b6b6b;
+    font-weight: normal;
+    position: relative;
+}
+
+.reasons-section h2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #6F2FAE;
+    color: white;
+    font-weight: bold;
+    top: -50%;
+    right: 86%;
+}
+
+.reasons-section h2::after {
+    content: "5";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: rgb(255 255 255);
+    font-weight: bold;
+    top: -30%;
+    right: 86%;
+    text-align: center;
+    font-size: 70px;
+}
+
+.reasons-section .packets {
+    float: left;
+    overflow: hidden;
+    width: 19%;
+    position: relative;
+
+}
+
+.reasons-section .packets::before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    background-color: #dedede;
+    top: 25px;
+}
+
+.reasons-section .packets::after {
+    counter-increment: bein-counter;
+    content: counter(bein-counter);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #6F2FAE;
+    border-radius: 50%;
+    top: 5px;
+    left: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+
+
+.reasons-section .packets h3 {
+    padding-bottom: 15px;
+    padding-top: 50px;
+
+}
+
+.reasons-section .packets {
+    line-height: 1.6;
+    color: #6b6b6b;
+    position: relative;
+}
+
+.whataspp img {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    position: fixed;
+    bottom: 60px;
+    left: 20px;
+    z-index: 2;
+}
+
+/* Footer one section */
+.footer-one {
+    margin-left: 20%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.footer-one span {
+    border: 1px solid #716C83;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 30px;
+    margin-left: 15px;
+}
+
+.footer-one span img {
+    width: 20px;
+    height: 30px;
+    background-size: contain;
+    position: relative;
+    top: 10px;
+}
+
+.footer-one span a {
+    text-decoration: none;
+}
+
+
+.specail-color-one a {
+    color: #6b6b6b;
+}
+
+.specail-color {
+    background-color: #4c2077;
+
+}
+
+.specail-color a {
+    color: white;
+    font-size: bold;
+}
+
+.specail-color i {
+    color: white;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+/* -------------------------------------- */
+/* second Footer Section */
+.footer-two {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.footer-two div {
+    float: left;
+    overflow: hidden;
+
+}
+
+.footer-two .left-side {
+    width: 45%;
+    padding-left: 10%;
+    position: relative;
+}
+
+.footer-two .left-side ul li {
+    list-style-type: none;
+    float: left;
+    padding: 10px 5px;
+    font-size: 13px;
+    color: #716C83;
+    position: relative;
+    /* border-right: 1px solid #6b6b6b; */
+}
+
+.footer-two .left-side ul li::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: #716C83;
+    right: 0;
+    top: 7px;
+}
+
+.footer-two .right-side {
+    width: 45%;
+    text-align: right;
+    padding-left: 10px;
+    margin-left: -70px;
+}
+
+.footer-two .right-side i {
+    color: #4c2077;
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+
+
+.footer-two img {
+    width: 90px;
+    height: 40px;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
+.footer-two::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #6F2FAE;
+    left: 46px;
+    bottom: 1px;
+}
